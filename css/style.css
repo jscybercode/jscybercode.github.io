@@ -216,6 +216,7 @@ header{
 footer div{margin: 0}
 footer .copyright{width: 100vw; text-align: center; padding: 50px;}
 footer li{list-style: none;}
+footer a{color: black;}
 
 
 
