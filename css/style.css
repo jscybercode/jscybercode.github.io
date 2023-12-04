@@ -8,13 +8,15 @@ body {
     font-family: sans-serif;
 }
 
+div h2{margin-top: 15px;}
+
 header{
     width: 100vw;
 }
 
 header .header_text{
     text-align: center;
-    padding: 100px;
+    padding: 25px;
     color: white;
     font-size: xx-large;
 }
@@ -22,7 +24,7 @@ header .header_text{
 header{
     width: 100vw;
     height: 50vh; 
-    background-image: url("../images/hero_image2.png"); 
+    background-image: url("/images/hero_image2.png"); 
     background-repeat: no-repeat, no-repeat; 
     background-size: cover;
 }
@@ -44,11 +46,11 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 10px;
   }
 
   
-li{list-style: none; display: inline;}
+  .nav li{list-style: none; display: inline;}
 
   .logo {
     font-size: 1.5rem;
@@ -150,7 +152,7 @@ li{list-style: none; display: inline;}
 }
 
         /* Dropdown */
-        /* .dropdown {
+        .dropdown {
           position: relative;
           display: inline-block;
         }
@@ -176,11 +178,92 @@ li{list-style: none; display: inline;}
         .dropdown:hover .dropdown-content {display: block;}
 
         .dropdown:hover .dropbtn {background-color: #3e8e41;}
-        */
+   
+
+
+        .theTable h2{text-align: center;}    
+        table{
+                margin-left: auto;
+                margin-right: auto;
+        }
+        .tableSplit{width: 100px;}
+
+
+        
+
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+
+.column h2{text-align: center; padding: 10px;}
+
+.column .col_a a{color: greenyellow;}
+.column .col_a a:hover{color: rgb(102, 155, 22);}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer Style */
+footer div{margin: 0}
+footer .copyright{width: 100vw; text-align: center; padding: 50px;}
+footer li{list-style: none;}
+
+
+
+
+#footer {
+/* box-sizing: border-box;  
+position: fixed;
+bottom: 0; */
+width: 100%;
+/* background: #6cf; */
+}
+
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  height: 50px;
+  width: 50px;
+  padding: 20px;
+}
+
+.fa-instagram {
+  background: #3B5998;
+  color: white;
+  height: 50px;
+  width: 50px;
+  padding: 20px;
+}
+
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+
+  footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+}
+
 
 
 /* Desktop */
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 850px) {
     .nav__link {
       display: block;
       position: static;
@@ -198,3 +281,49 @@ li{list-style: none; display: inline;}
       display: none;
     }
   }
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 50px) and (max-width: 480px){ 
+    /* body{
+        background-color: #3B5998;
+    } */
+    .header_text h1{
+      font-size: 25px;
+      color: #f1e615;
+    }
+    .header_text p{
+      font-size: 15px;
+      color: #f1e615;
+    }
+}
+
+@media all and (min-width: 481px) and (max-width: 768px){ 
+    /* body{
+        background-color: #3e8e41;
+    } */
+    .header_text h1{
+      font-size: 50px;
+      color: #f1e615;
+    }
+
+
+}
+
+@media all and (min-width: 769px) and (max-width: 1279px){ 
+    /* body{
+        background-color: #f1e615;
+    } */
+}
+
+@media all and (min-width: 1280px) and (max-width: 1400px) { 
+    body{
+        background-color: #2f2e27;
+    }
+}
