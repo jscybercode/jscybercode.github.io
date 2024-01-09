@@ -1,0 +1,43 @@
+body{margin: 0;}
+header{background-color:rgb(238, 234, 226); text-align: center;}
+
+.s_name{
+    margin-bottom: 0;
+    line-height: 150px;
+    letter-spacing: 3px;
+    font-size: 7em;
+}
+.s_tag{
+    margin-top: -25px;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+}
+
+
+#threeColumns{
+    overflow: hidden;
+    width: 1000px;
+    margin: 0px auto;
+    padding: 30px 0px;
+}
+
+#threeColumns h2{
+    padding: 0px 9px 10px 0px;
+    font-size: 30px;
+}
+
+#threeColumns #colums1{
+    float: left;
+    width: 300px;
+    margin-right: 50px;
+}
+
+#threeColumns #colums2{
+    float: left;
+    width: 300px;
+}
+
+#threeColumns #colums3{
+    float: right;
+    width: 300px;
+}
