@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDEV | Fundamentals</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="page-wrapper">
+  <div id="page-sidebar">
+    <header>
+      <p class="project">CIST1510</p>
+      <p class="title">Web Development Fundamentals</p>
+      <p class="backlink"><a href="#">&laquo; Homepage</a></p>
+    </header>
+    <nav id="toc">
+      <ul>
+        <li><a href="#refresher">Web Fundamentals</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#downloads">Essential Downloads</a></li>
+        <li><a href="#html">HTML Must Knows</a></li>
+        <li><a href="#forms">HTML Forms</a></li>
+        <li><a href="#css">CSS Must Knows</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div id="page-content">
+    <section id="refresher">
+      <h1>Web Development Fundamentals</h1>
+      <p><a href="#">Download Demo Code</a></p>
+    </section>
+
+    <section id="goals">
+      <h2>Goals</h2>
+      <ul>
+        <li>Make sure you get the most from this course!</li>
+        <li>Review HTML, CSS, and JavaScript basics</li>
+      </ul>
+    </section>
+
+    <section id="downloads">
+      <h2>Essential Downloads</h2>
+      <ul>
+        <li class="li_span1">Text editor - <strong>VSCode recommended</strong><span> (NOT THE SAME AS VISUAL STUDIO !)</span></li>
+        <li>Web browser - <strong>Chrome recommended</strong></li>
+      </ul>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfolio Website Plan</h2>
+      <ul>
+        <li><a href="./Planning_Website/portfolio.html" target="_blank">Work Sheet</a></li>
+      </ul>
+        
+    </section>
+
+
+
+<section id="html">
+      <h2>HTML Must Knows</h2>
+<p>Common HTML elements:</p>
+<pre>
+<div>
+<h4>Basic Webpage:</h4>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt; body&gt;
+        &lt;h1&gt; Hello World ! &lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</div>
+
+<div>
+<h4>Essential html elements:</h4>
+&lt;div&gt;&lt;/div&gt;
+&lt;h1&gt; to &lt;h6&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;span&gt;&lt;/span&gt;
+</div>
+
+<div>
+<h4>HTML LIST ELEMENTS</h4>
+&lt;ul&gt;&lt;/ul&gt;  
+&lt;ol&gt;&lt;/ol&gt;  
+&lt;li&gt;&lt;/li&gt;
+</div>
+
+<p>You should be able to explain block element vs inline element</p>
+
+<div>
+<h4>additional html</h4>
+&lt;script&gt;&lt;/script&gt;
+
+&lt;link rel="" href="" /&gt;
+
+&lt;a href=""&gt;&lt;/a&gt;
+
+&lt;img src="" alt="" /&gt;
+</div>
+
+
+
+
+
+
+</pre>
+</section>
+
+
+    <section id="forms">
+      <h3>HTML Forms</h3>
+      <form onsubmit="return handleSubmit(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" />
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+
+<section id="css">
+<h2>CSS Must Knows</h2>
+<p>Specificity example:</p>
+
+<pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span> <span class="na">href</span><span class="o">=</span><span class="s">"main.css"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">"id-style"</span> <span class="na">class</span><span class="o">=</span><span class="s">"class-style"</span><span class="p">&gt;</span>Hi<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre>
+
+<pre>
+
+h1 {
+  background: crimson;
+}
+.class-style {
+  background: violet;
+}
+#id-style {
+  background: dodgerblue;
+}
+      </pre>
+     
+    </section>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
