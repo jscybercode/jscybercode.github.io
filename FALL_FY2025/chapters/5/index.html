@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Module 5: Responsive Design</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Mobile-first base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+      padding: 0;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background-color: #2c3e50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav {
+      background-color: #34495e;
+    }
+
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      padding: 0;
+    }
+
+    nav li {
+      border-top: 1px solid #2c3e50;
+    }
+
+    nav li a {
+      display: block;
+      padding: 10px;
+      color: #ecf0f1;
+      text-decoration: none;
+    }
+
+    nav li a:hover {
+      background-color: #2c3e50;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .mobile-note {
+      background-color: #eef;
+      padding: 10px;
+      border-left: 5px solid #2980b9;
+      margin: 15px 0;
+    }
+
+    .rounded {
+      border-radius: 10px;
+      background-color: #f0f0f0;
+      padding: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ecf0f1;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    /* Tablet and up */
+    @media (min-width: 600px) {
+      nav ul {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      nav li {
+        border: none;
+      }
+
+      nav li a {
+        padding: 15px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Module 5: Responsive Design for Mobile Devices</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Introduction</a></li>
+      <li><a href="#">Project</a></li>
+      <li><a href="#">Mobile Styles</a></li>
+      <li><a href="#">Navigation</a></li>
+      <li><a href="#">Validation</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Introduction</h2>
+    </section>
+
+    <section>
+      <h2>Project</h2>
+      <p><strong>Redesign a Website for Mobile Devices</strong></p>
+    </section>
+
+    <section>
+      <h2>Roadmap</h2>
+      <ul>
+        <li>Exploring Responsive Design</li>
+        <li>Designing for Mobile Devices</li>
+        <li>Using Responsive Design</li>
+        <li>Creating a Fluid Layout</li>
+        <li>Following a Mobile-First Strategy</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Responsive Essentials</h2>
+      <ul>
+        <li>Meta Viewport Element</li>
+        <li>Sticky Elements</li>
+        <li>Responsive Navigation</li>
+        <li>Custom Fonts</li>
+        <li>Pseudo-Classes</li>
+      </ul>
+      <div class="mobile-note">
+        Example: <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
+      </div>
+    </section>
+
+    <section>
+      <h2>Mobile-First Strategy</h2>
+      <ul>
+        <li>Steps in a Mobile-First Strategy</li>
+        <li>Commenting Mobile Styles</li>
+        <li>Creating Sticky Headers</li>
+        <li>Modifying nav and ul/li styles for mobile</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Typography & Layout</h2>
+      <ul>
+        <li>Integrate Google Fonts</li>
+        <li>Adjust nav li a styles</li>
+        <li>Create style rules for mobile/tablet classes</li>
+      </ul>
+      <div class="rounded">
+        Custom font used: <strong>Inter</strong> from Google Fonts
+      </div>
+    </section>
+
+    <section>
+      <h2>Mobile-Specific Enhancements</h2>
+      <ul>
+        <li>Add .tel-link and .hours classes</li>
+        <li>Use .round class for soft corners</li>
+        <li>Switch to single-column layout on mobile</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Page Analysis</h2>
+      <ul>
+        <li>Analyze and modify the Home Page</li>
+        <li>Modify the about Us Page</li>
+        <li>Modify the Contact Us Page</li>
+        <li>Update styles for #contact a and .map</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Validation</h2>
+      <ul>
+        <li><a href="https://validator.w3.org/" target="_blank">Validate HTML Files</a></li>
+        <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">Validate CSS Files</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Chapter Summary & Practice</h2>
+      <ul>
+        <li>Apply Your Knowledge</li>
+        <li>Extend Your Knowledge</li>
+        <li>Analyze, Correct, Improve</li>
+        <li>In the Lab</li>
+        <li>Consider This: Your Turn</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Web Design Course – Module 5: Responsive Design
+  </footer>
+
+</body>
+</html>
+

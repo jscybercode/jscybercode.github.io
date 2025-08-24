@@ -1,7 +1,7 @@
-function handleSubmit(event) {
-  event.preventDefault();
-  const name = document.getElementById("name").value;
-  alert(`Hello, ${name || "stranger"}!`);
-  return false;
-}
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
 

@@ -1,145 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebDEV | Fundamentals</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Webpage</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div id="page-wrapper">
-  <div id="page-sidebar">
-    <header>
-      <p class="project">CIST1510</p>
-      <p class="title">Web Development Fundamentals</p>
-      <p class="backlink"><a href="#">&laquo; Homepage</a></p>
-    </header>
-    <nav id="toc">
-      <ul>
-        <li><a href="#refresher">Web Fundamentals</a></li>
-        <li><a href="#goals">Goals</a></li>
-        <li><a href="#downloads">Essential Downloads</a></li>
-        <li><a href="#html">HTML Must Knows</a></li>
-        <li><a href="#forms">HTML Forms</a></li>
-        <li><a href="#css">CSS Must Knows</a></li>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyWebsite</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="./notes/index.html">Notes</a></li>
+        <li class="dropdown">
+          <a href="#">Classes</a>
+          <ul class="dropdown-content">
+            <li><a href="#">TEMPLATE</a></li>
+            <li><a href="#">IMAGES & LINKS</a></li>
+            <li><a href="#">Mobile Design</a></li>
+            <li><a href="#">Desktop Design</a></li>
+            <li class="dropdown">
+              <a href="#">Advanced</a>
+              <ul class="dropdown-content">
+                <li><a href="#">Improving Website</a></li>
+                <li><a href="#">Tables & Forms</a></li>
+                <li><a href="#">Audio & Video</a></li>
+                <li><a href="#">PPM</a></li>
+                <li><a href="#">BOOTSTRAP</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Appendix</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
+      <div class="menu-toggle">&#9776;</div>
     </nav>
-  </div>
+  </header>
 
-  <div id="page-content">
-    <section id="refresher">
-      <h1>Web Development Fundamentals</h1>
-      <p><a href="#">Download Demo Code</a></p>
-    </section>
+  <section id="home">
+    <h1>Welcome to My Website</h1>
+  </section>
 
-    <section id="goals">
-      <h2>Goals</h2>
-      <ul>
-        <li>Make sure you get the most from this course!</li>
-        <li>Review HTML, CSS, and JavaScript basics</li>
-      </ul>
-    </section>
 
-    <section id="downloads">
-      <h2>Essential Downloads</h2>
-      <ul>
-        <li class="li_span1">Text editor - <strong>VSCode recommended</strong><span> (NOT THE SAME AS VISUAL STUDIO !)</span></li>
-        <li>Web browser - <strong>Chrome recommended</strong></li>
-      </ul>
-    </section>
 
-    <section id="html">
-      <h2>HTML Must Knows</h2>
-<p>Common HTML elements:</p>
-<pre>
-<div>
-<h4>Basic Webpage:</h4>
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt; body&gt;
-        &lt;h1&gt; Hello World ! &lt;/h1&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-</div>
 
-<div>
-<h4>Essential html elements:</h4>
-&lt;div&gt;&lt;/div&gt;
-&lt;h1&gt; to &lt;h6&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;span&gt;&lt;/span&gt;
-</div>
-
-<div>
-<h4>HTML LIST ELEMENTS</h4>
-&lt;ul&gt;&lt;/ul&gt;  
-&lt;ol&gt;&lt;/ol&gt;  
-&lt;li&gt;&lt;/li&gt;
-</div>
-
-<p>You should be able to explain block element vs inline element</p>
-
-<div>
-<h4>additional html</h4>
-&lt;script&gt;&lt;/script&gt;
-
-&lt;link rel="" href="" /&gt;
-
-&lt;a href=""&gt;&lt;/a&gt;
-
-&lt;img src="" alt="" /&gt;
-</div>
+  <section class="card-section">
+    <h2 style="text-align:center;">Our Courses</h2>
+    <div class="card-container">
+      
+      <a href="./chapters/1/index.html" target="_blank" class="card-link">
+        <div class="card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML Class" />
+          <div class="card-body">
+            <h3>HTML Basics</h3>
+            <p>Learn the building blocks of the web with our beginner-friendly HTML course.</p>
+          </div>
+        </div>
+      </a>
+  
+      <a href="#" target="_blank" class="card-link">
+        <div class="card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+          <div class="card-body">
+            <h3>CSS Styling</h3>
+            <p>Style your websites with powerful and modern CSS techniques.</p>
+          </div>
+        </div>
+      </a>
+  
+      <a href="#" target="_blank" class="card-link">
+        <div class="card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+          <div class="card-body">
+            <h3>JavaScript Essentials</h3>
+            <p>Make your websites interactive with JavaScript essentials and projects.</p>
+          </div>
+        </div>
+      </a>
+  
+    </div>
+  </section>
+  
 
 
 
 
 
 
-</pre>
-</section>
+  <section id="about" class="two-column">
+    <div class="image">
+      <img src="./img/image1.png" alt="About Us" />
+    </div>
+    <div class="description">
+      <header class="header_two">
+        <h1>William Jerome Scott</h1>
+        <p>Cybersecurity Professional & Educator</p>
+    </header>
 
+    <div class="container2">
+        <h2>About William</h2>
+        <p>William Jerome Scott was born in Camden, New Jersey, in 1966 on a cold, snowy winter day. He began his education at Transfiguration Elementary School and later attended Camden Catholic High School in Cherry Hill.</p>
+        <p>In 1985, William enlisted in the United States Marine Corps, completing boot camp at Parris Island, South Carolina. He proudly served his country for 22 years, gaining extensive experience, leadership skills, and a deep sense of discipline and dedication.</p>
+        <p>Following his military service, William pursued higher education to complement his technical and leadership background. He earned an associate degree in Business and Computer Technology from Camden County College, studied Computer Science at Rowan University, completed his Bachelor of Arts at Thomas Edison University, and went on to receive a Master’s degree in Cybersecurity Technology from University of Maryland University College.</p>
+        <p>William’s professional career began as an Assistant Network Administrator at Merck in West Point, Pennsylvania. He then transitioned into education, teaching computer literacy as a substitute high school teacher. His commitment to public service led him to a role as the Federal Tuition Manager for the state of New Jersey, working on behalf of the federal government to support educational initiatives.</p>
+        <p>Currently, William serves as an Adjunct Computer Science Instructor at Gwinnett Technical College, where he shares his wealth of knowledge and experience with the next generation of IT professionals. His career reflects a lifelong dedication to service, education, and technological advancement.</p>
+    </div>
 
-    <section id="forms">
-      <h3>HTML Forms</h3>
-      <form onsubmit="return handleSubmit(event)">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your name" />
-        <input type="submit" value="Submit" />
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
       </form>
-    </section>
+    </div>
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p>Email: wscott@gwinnetttech.edu</p>
+      <p>Phone: +‪(404) 939-3154‬</p>
+    </div>
+  </section>
 
-<section id="css">
-<h2>CSS Must Knows</h2>
-<p>Specificity example:</p>
+  <footer>
+    <div class="footer-column">
+      <h4>About</h4>
+      <p>Short description about the site.</p>
+    </div>
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="https://www.w3schools.com/html/" target="_blank">HTML</a></li>
+        <li><a href="https://www.w3schools.com/css/" target="_blank">CSS</a></li>
+        <li><a href="https://www.w3schools.com/js/"  target="_blank">JavaScript</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <ul class="list-unstyled">
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Help</a></li>
+    </div>
+    <div class="footer-column">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#" class="me-2"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook"></a>
+        <a href="#" class="me-2"><img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733558.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
 
-<pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span> <span class="na">href</span><span class="o">=</span><span class="s">"main.css"</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">"id-style"</span> <span class="na">class</span><span class="o">=</span><span class="s">"class-style"</span><span class="p">&gt;</span>Hi<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</pre>
-
-<pre>
-
-h1 {
-  background: crimson;
-}
-.class-style {
-  background: violet;
-}
-#id-style {
-  background: dodgerblue;
-}
-      </pre>
-     
-    </section>
-  </div>
-</div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
+

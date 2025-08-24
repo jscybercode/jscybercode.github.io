@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Module 6: Responsive Design Part 2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & Base Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #2c3e50, #3498db);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      background-color: #34495e;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+      border-top: 1px solid #2c3e50;
+    }
+
+    nav li a:hover {
+      background-color: #2c3e50;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #ecf0f1;
+      color: #7f8c8d;
+    }
+
+    /* Tablet Viewport Styles */
+    @media (min-width: 600px) {
+      nav ul {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      nav li a {
+        border: none;
+        padding: 15px 20px;
+      }
+
+      .tablet-note {
+        display: block;
+        padding: 10px;
+        background-color: #e6f7ff;
+        border-left: 5px solid #2980b9;
+        margin: 10px 0;
+      }
+    }
+
+    /* Desktop Viewport Styles */
+    @media (min-width: 900px) {
+      main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+      }
+
+      section {
+        background: #fafafa;
+        padding: 15px;
+        border-radius: 6px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.05);
+      }
+    }
+
+    /* Large Viewport */
+    @media (min-width: 1200px) {
+      body {
+        font-size: 18px;
+      }
+    }
+
+    /* Print Styles */
+    @media print {
+      nav, footer {
+        display: none;
+      }
+
+      main {
+        box-shadow: none;
+        background: white;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Module 6: Responsive Design for Tablet & Desktop</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Introduction</a></li>
+      <li><a href="#">Project</a></li>
+      <li><a href="#">Tablet</a></li>
+      <li><a href="#">Desktop</a></li>
+      <li><a href="#">Validation</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Introduction</h2>
+    </section>
+
+    <section>
+      <h2>Project</h2>
+      <p><strong>Use Media Queries to Design for Tablet and Desktop Viewports</strong></p>
+    </section>
+
+    <section>
+      <h2>Roadmap</h2>
+      <ul>
+        <li>Using Media Queries</li>
+        <li>Breakpoints</li>
+        <li>Media Query Expressions</li>
+        <li>Adding Media Queries to External Style Sheets</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Tablet Viewport Design</h2>
+      <ul>
+        <li>Create Media Query for Tablet</li>
+        <li>Show/Hide Content</li>
+        <li>Remove Sticky Header</li>
+        <li>Style Navigation</li>
+        <li>Style About Us List</li>
+        <li>Move Style Rules into Tablet Query</li>
+      </ul>
+      <div class="tablet-note">
+        Example breakpoint: <code>@media (min-width: 600px)</code>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact Us Tablet Adjustments</h2>
+      <ul>
+        <li>Modify Page</li>
+        <li>Style Embedded Map</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Desktop Viewport Design</h2>
+      <ul>
+        <li>Create Media Query for Desktop</li>
+        <li>Style Header and Navigation</li>
+        <li>Style Main and h1 Elements</li>
+        <li>Create Multiple-Column Layout</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Advanced Media Queries</h2>
+      <ul>
+        <li>Create Query for Large Viewports</li>
+        <li>Create Print Styles</li>
+        <li>Modify Breakpoints as Needed</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Additional Styling Techniques</h2>
+      <ul>
+        <li>Use Dynamic Pseudo-Classes</li>
+        <li>Add Linear Gradient Backgrounds</li>
+        <li>Display Website in Multiple Viewports</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Validation</h2>
+      <ul>
+        <li><a href="https://validator.w3.org/" target="_blank">Validate HTML</a></li>
+        <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">Validate CSS</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Chapter Summary & Practice</h2>
+      <ul>
+        <li>Apply Your Knowledge</li>
+        <li>Extend Your Knowledge</li>
+        <li>Analyze, Correct, Improve</li>
+        <li>In the Lab</li>
+        <li>Consider This: Your Turn</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Web Design Course – Module 6: Responsive Design Part 2
+  </footer>
+
+</body>
+</html>
+
